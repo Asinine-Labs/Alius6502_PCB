@@ -1,0 +1,116 @@
+
+(rules PCB Alius_6502
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 65451)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    RESET CLOCK "Net-(J1-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "unconnected-(U1-Pad1)" "unconnected-(U1-Pad3)" IRQ
+    "unconnected-(U1-Pad5)" "unconnected-(U1-Pad7)" /A0 /A1 /A2 /A3 /A4 /A5
+    /A6 /A7 /A8 /A9 /A10 /A11 /A12 /A13
+    /A14 /A15 /D7 /D6 /D5 /D4 /D3 /D2
+    /D1 /D0 RW "unconnected-(U1-Pad35)" "unconnected-(U1-Pad38)" "unconnected-(U1-Pad39)" "ROM_OE" "RAM_OE"
+    "IO_CS" "ROM_CS" "unconnected-(U2-Pad11)" "unconnected-(U3-Pad4)" "unconnected-(U3-Pad10)" "unconnected-(U3-Pad13)" "IRQ_A" "IRQ_B"
+    "unconnected-(U5-Pad3)" "unconnected-(U5-Pad8)" "unconnected-(U5-Pad11)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad4)" "Net-(J2-Pad5)"
+    "Net-(J2-Pad6)" "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J2-Pad10)" "Net-(J2-Pad11)" "Net-(J2-Pad12)" "Net-(J2-Pad13)"
+    "Net-(J2-Pad14)" "Net-(J2-Pad15)" "Net-(J2-Pad16)" "unconnected-(U7-Pad18)" "unconnected-(U7-Pad19)" "unconnected-(U7-Pad39)" "unconnected-(U7-Pad40)" "SD_Detect"
+    "SPI_MISO" "7Seg_CS" "SD_Card_CS" "unconnected-(J4-Pad2)" "unconnected-(U8-Pad7)" "unconnected-(U8-Pad18)" "unconnected-(U8-Pad19)" "unconnected-(U8-Pad39)"
+    "unconnected-(U8-Pad40)" "unconnected-(X1-Pad1)" "Net-(R4-Pad1)" "Net-(LED1-Pad7)" "Net-(R5-Pad1)" "Net-(LED1-Pad6)" "Net-(R6-Pad1)" "Net-(LED1-Pad4)"
+    "Net-(R7-Pad1)" "Net-(LED1-Pad2)" "Net-(R8-Pad1)" "Net-(LED1-Pad1)" "Net-(R9-Pad1)" "Net-(LED1-Pad9)" "Net-(R10-Pad1)" "Net-(LED1-Pad10)"
+    "Net-(R11-Pad1)" "Net-(LED1-Pad5)" "Net-(R12-Pad1)" "Net-(LED2-Pad7)" "Net-(R13-Pad1)" "Net-(LED2-Pad6)" "Net-(R14-Pad1)" "Net-(LED2-Pad4)"
+    "Net-(R15-Pad1)" "Net-(LED2-Pad2)" "Net-(R16-Pad1)" "Net-(LED2-Pad1)" "Net-(R17-Pad1)" "Net-(LED2-Pad9)" "Net-(R18-Pad1)" "Net-(LED2-Pad10)"
+    "Net-(R19-Pad1)" "Net-(LED2-Pad5)" "Net-(R20-Pad1)" "Net-(LED3-Pad7)" "Net-(R21-Pad1)" "Net-(LED3-Pad6)" "Net-(R22-Pad1)" "Net-(LED3-Pad4)"
+    "Net-(R23-Pad1)" "Net-(LED3-Pad2)" "Net-(R24-Pad1)" "Net-(LED3-Pad1)" "Net-(R25-Pad1)" "Net-(LED3-Pad9)" "Net-(R26-Pad1)" "Net-(LED3-Pad10)"
+    "Net-(R27-Pad1)" "Net-(LED3-Pad5)" "Net-(R28-Pad1)" "Net-(LED4-Pad7)" "Net-(R29-Pad1)" "Net-(LED4-Pad6)" "Net-(R30-Pad1)" "Net-(LED4-Pad4)"
+    "Net-(R31-Pad1)" "Net-(LED4-Pad2)" "Net-(R32-Pad1)" "Net-(LED4-Pad1)" "Net-(R33-Pad1)" "Net-(LED4-Pad9)" "Net-(R34-Pad1)" "Net-(LED4-Pad10)"
+    "Net-(R35-Pad1)" "Net-(LED4-Pad5)" "Net-(R36-Pad1)" "Net-(LED5-Pad7)" "Net-(R37-Pad1)" "Net-(LED5-Pad6)" "Net-(R38-Pad1)" "Net-(LED5-Pad4)"
+    "Net-(R39-Pad1)" "Net-(LED5-Pad2)" "Net-(R40-Pad1)" "Net-(LED5-Pad1)" "Net-(R41-Pad1)" "Net-(LED5-Pad9)" "Net-(R42-Pad1)" "Net-(LED5-Pad10)"
+    "Net-(R43-Pad1)" "Net-(LED5-Pad5)" "Net-(R44-Pad1)" "Net-(LED6-Pad7)" "Net-(R45-Pad1)" "Net-(LED6-Pad6)" "Net-(R46-Pad1)" "Net-(LED6-Pad4)"
+    "Net-(R47-Pad1)" "Net-(LED6-Pad2)" "Net-(R48-Pad1)" "Net-(LED6-Pad1)" "Net-(R49-Pad1)" "Net-(LED6-Pad9)" "Net-(R50-Pad1)" "Net-(LED6-Pad10)"
+    "Net-(R51-Pad1)" "Net-(LED6-Pad5)" "Net-(U10-Pad14)" "SPI_CLK" "7seg_CS" "7seg_OE" "SPI_MOSI" "Net-(U10-Pad9)"
+    "Net-(U11-Pad9)" "Net-(U12-Pad9)" "Net-(U13-Pad9)" "unconnected-(U14-Pad9)" KeyRow5 KeyRow4 KeyRow3 KeyRow2
+    KeyRow1 KeyCol1 KeyCol2 KeyCol3 KeyCol4
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND VCC
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Alius_6502")(type "KiCad")(uri "${KIPRJMOD}/Alius_6502.pretty")(options "")(descr ""))
+)

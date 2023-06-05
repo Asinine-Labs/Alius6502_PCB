@@ -1,0 +1,20 @@
+(footprint "2_pin_header" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.1)))
+    (tstamp 774f9b1b-b204-4450-8c1b-0b56b514c5c2)
+  )
+  (fp_text value "2_pin_header" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp a92fd8c8-34c9-47db-a2a7-95585e4ec6e6)
+  )
+  (fp_text user "${REFERENCE}" (at 4.005384 -3.593681 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 3b370d07-c731-4ca8-b859-e17c7fdb5530)
+  )
+  (fp_rect (start -1.27 -1.27) (end 3.81 1.27)
+    (stroke (width 0.12) (type solid)) (fill none) (layer "F.SilkS") (tstamp 5bbabc0a-024a-46eb-a160-c6c66be3244b))
+  (pad "1" thru_hole rect (at 0 0) (size 1.778 1.778) (drill 1.016) (layers "*.Cu" "*.Mask") (tstamp 401b1592-659b-4621-9b35-d309e0b7107c))
+  (pad "2" thru_hole circle (at 2.54 0) (size 1.778 1.778) (drill 1.016) (layers "*.Cu" "*.Mask") (tstamp c0d57fa3-b241-4052-af89-b682636500a1))
+)
