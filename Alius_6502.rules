@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 65451)
+    (start_pass_no 110220)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -58,31 +58,13 @@
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (class default
-    RESET CLOCK "Net-(J1-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "unconnected-(U1-Pad1)" "unconnected-(U1-Pad3)" IRQ
-    "unconnected-(U1-Pad5)" "unconnected-(U1-Pad7)" /A0 /A1 /A2 /A3 /A4 /A5
-    /A6 /A7 /A8 /A9 /A10 /A11 /A12 /A13
-    /A14 /A15 /D7 /D6 /D5 /D4 /D3 /D2
-    /D1 /D0 RW "unconnected-(U1-Pad35)" "unconnected-(U1-Pad38)" "unconnected-(U1-Pad39)" "ROM_OE" "RAM_OE"
-    "IO_CS" "ROM_CS" "unconnected-(U2-Pad11)" "unconnected-(U3-Pad4)" "unconnected-(U3-Pad10)" "unconnected-(U3-Pad13)" "IRQ_A" "IRQ_B"
-    "unconnected-(U5-Pad3)" "unconnected-(U5-Pad8)" "unconnected-(U5-Pad11)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad4)" "Net-(J2-Pad5)"
-    "Net-(J2-Pad6)" "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J2-Pad10)" "Net-(J2-Pad11)" "Net-(J2-Pad12)" "Net-(J2-Pad13)"
-    "Net-(J2-Pad14)" "Net-(J2-Pad15)" "Net-(J2-Pad16)" "unconnected-(U7-Pad18)" "unconnected-(U7-Pad19)" "unconnected-(U7-Pad39)" "unconnected-(U7-Pad40)" "SD_Detect"
-    "SPI_MISO" "7Seg_CS" "SD_Card_CS" "unconnected-(J4-Pad2)" "unconnected-(U8-Pad7)" "unconnected-(U8-Pad18)" "unconnected-(U8-Pad19)" "unconnected-(U8-Pad39)"
-    "unconnected-(U8-Pad40)" "unconnected-(X1-Pad1)" "Net-(R4-Pad1)" "Net-(LED1-Pad7)" "Net-(R5-Pad1)" "Net-(LED1-Pad6)" "Net-(R6-Pad1)" "Net-(LED1-Pad4)"
-    "Net-(R7-Pad1)" "Net-(LED1-Pad2)" "Net-(R8-Pad1)" "Net-(LED1-Pad1)" "Net-(R9-Pad1)" "Net-(LED1-Pad9)" "Net-(R10-Pad1)" "Net-(LED1-Pad10)"
-    "Net-(R11-Pad1)" "Net-(LED1-Pad5)" "Net-(R12-Pad1)" "Net-(LED2-Pad7)" "Net-(R13-Pad1)" "Net-(LED2-Pad6)" "Net-(R14-Pad1)" "Net-(LED2-Pad4)"
-    "Net-(R15-Pad1)" "Net-(LED2-Pad2)" "Net-(R16-Pad1)" "Net-(LED2-Pad1)" "Net-(R17-Pad1)" "Net-(LED2-Pad9)" "Net-(R18-Pad1)" "Net-(LED2-Pad10)"
-    "Net-(R19-Pad1)" "Net-(LED2-Pad5)" "Net-(R20-Pad1)" "Net-(LED3-Pad7)" "Net-(R21-Pad1)" "Net-(LED3-Pad6)" "Net-(R22-Pad1)" "Net-(LED3-Pad4)"
-    "Net-(R23-Pad1)" "Net-(LED3-Pad2)" "Net-(R24-Pad1)" "Net-(LED3-Pad1)" "Net-(R25-Pad1)" "Net-(LED3-Pad9)" "Net-(R26-Pad1)" "Net-(LED3-Pad10)"
-    "Net-(R27-Pad1)" "Net-(LED3-Pad5)" "Net-(R28-Pad1)" "Net-(LED4-Pad7)" "Net-(R29-Pad1)" "Net-(LED4-Pad6)" "Net-(R30-Pad1)" "Net-(LED4-Pad4)"
-    "Net-(R31-Pad1)" "Net-(LED4-Pad2)" "Net-(R32-Pad1)" "Net-(LED4-Pad1)" "Net-(R33-Pad1)" "Net-(LED4-Pad9)" "Net-(R34-Pad1)" "Net-(LED4-Pad10)"
-    "Net-(R35-Pad1)" "Net-(LED4-Pad5)" "Net-(R36-Pad1)" "Net-(LED5-Pad7)" "Net-(R37-Pad1)" "Net-(LED5-Pad6)" "Net-(R38-Pad1)" "Net-(LED5-Pad4)"
-    "Net-(R39-Pad1)" "Net-(LED5-Pad2)" "Net-(R40-Pad1)" "Net-(LED5-Pad1)" "Net-(R41-Pad1)" "Net-(LED5-Pad9)" "Net-(R42-Pad1)" "Net-(LED5-Pad10)"
-    "Net-(R43-Pad1)" "Net-(LED5-Pad5)" "Net-(R44-Pad1)" "Net-(LED6-Pad7)" "Net-(R45-Pad1)" "Net-(LED6-Pad6)" "Net-(R46-Pad1)" "Net-(LED6-Pad4)"
-    "Net-(R47-Pad1)" "Net-(LED6-Pad2)" "Net-(R48-Pad1)" "Net-(LED6-Pad1)" "Net-(R49-Pad1)" "Net-(LED6-Pad9)" "Net-(R50-Pad1)" "Net-(LED6-Pad10)"
-    "Net-(R51-Pad1)" "Net-(LED6-Pad5)" "Net-(U10-Pad14)" "SPI_CLK" "7seg_CS" "7seg_OE" "SPI_MOSI" "Net-(U10-Pad9)"
-    "Net-(U11-Pad9)" "Net-(U12-Pad9)" "Net-(U13-Pad9)" "unconnected-(U14-Pad9)" KeyRow5 KeyRow4 KeyRow3 KeyRow2
-    KeyRow1 KeyCol1 KeyCol2 KeyCol3 KeyCol4
+    RESET CLOCK IRQ /A0 /A1 /A2 /A3 /A4
+    /A5 /A6 /A7 /A8 /A9 /A10 /A11 /A12
+    /A13 /A14 /A15 /D7 /D6 /D5 /D4 /D3
+    /D2 /D1 /D0 RW "ROM_OE" "RAM_OE" "IO_CS" "ROM_CS"
+    "IRQ_A" "IRQ_B" "SD_Detect" "SPI_MISO" "SD_Card_CS" "SPI_CLK" "7seg_OE" "SPI_MOSI"
+    KeyRow5 KeyRow4 KeyRow3 KeyRow2 KeyRow1 KeyCol1 KeyCol2 KeyCol3
+    KeyCol4 "7Seg_CS"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -93,6 +75,25 @@
     )
   )
   (class "kicad_default"
+    "unconnected-(X1-NC-Pad1)" "unconnected-(U1-VPB-Pad1)" "unconnected-(U1-PHI1O-Pad3)" "unconnected-(U1-MLB-Pad5)" "unconnected-(U1-SYNC-Pad7)" "unconnected-(U1-NC-Pad35)" "unconnected-(U1-SOB-Pad38)" "unconnected-(U1-PHI2O-Pad39)"
+    "unconnected-(U2-4Y-Pad11)" "unconnected-(U3-2Y-Pad4)" "Net-(U3-3Y)" "unconnected-(U5-NC-Pad3)" "unconnected-(U5-2Y-Pad8)" "unconnected-(U5-NC-Pad11)" "unconnected-(U7-CB1-Pad18)" "unconnected-(U7-CB2-Pad19)"
+    "unconnected-(U7-CA2-Pad39)" "unconnected-(U7-CA1-Pad40)" "Net-(J1-Pin_2)" "Net-(U10-SER)" "Net-(U10-QH')" "Net-(U11-QH')" "Net-(U12-QH')" "Net-(U13-QH')"
+    "unconnected-(U14-QH'-Pad9)" "Net-(J2-Pin_1)" "Net-(J2-Pin_2)" "Net-(J2-Pin_3)" "Net-(J2-Pin_4)" "Net-(J2-Pin_5)" "Net-(J2-Pin_6)" "Net-(J2-Pin_7)"
+    "Net-(J2-Pin_8)" "Net-(J2-Pin_9)" "Net-(J2-Pin_10)" "Net-(J2-Pin_11)" "Net-(J2-Pin_12)" "Net-(J2-Pin_13)" "Net-(J2-Pin_14)" "Net-(J2-Pin_15)"
+    "Net-(J2-Pin_16)" "unconnected-(J4-Pin_2-Pad2)" "Net-(U1-RDY)" "Net-(U1-NMIB)" "RESET_BTN" "Net-(U9-QA)" "Net-(LED1-A)" "Net-(U9-QB)"
+    "Net-(LED1-B)" "Net-(U9-QC)" "Net-(LED1-C)" "Net-(U9-QD)" "Net-(LED1-D)" "Net-(U9-QE)" "Net-(LED1-E)" "Net-(U9-QF)"
+    "Net-(LED1-F)" "Net-(U9-QG)" "Net-(LED1-G)" "Net-(U9-QH)" "Net-(LED1-DP)" "Net-(U10-QA)" "Net-(LED2-A)" "Net-(U10-QB)"
+    "Net-(LED2-B)" "Net-(U10-QC)" "Net-(LED2-C)" "Net-(U10-QD)" "Net-(LED2-D)" "Net-(U10-QE)" "Net-(LED2-E)" "Net-(U10-QF)"
+    "Net-(LED2-F)" "Net-(U10-QG)" "Net-(LED2-G)" "Net-(U10-QH)" "Net-(LED2-DP)" "Net-(U11-QA)" "Net-(LED3-A)" "Net-(U11-QB)"
+    "Net-(LED3-B)" "Net-(U11-QC)" "Net-(LED3-C)" "Net-(U11-QD)" "Net-(LED3-D)" "Net-(U11-QE)" "Net-(LED3-E)" "Net-(U11-QF)"
+    "Net-(LED3-F)" "Net-(U11-QG)" "Net-(LED3-G)" "Net-(U11-QH)" "Net-(LED3-DP)" "Net-(U12-QA)" "Net-(LED4-A)" "Net-(U12-QB)"
+    "Net-(LED4-B)" "Net-(U12-QC)" "Net-(LED4-C)" "Net-(U12-QD)" "Net-(LED4-D)" "Net-(U12-QE)" "Net-(LED4-E)" "Net-(U12-QF)"
+    "Net-(LED4-F)" "Net-(U12-QG)" "Net-(LED4-G)" "Net-(U12-QH)" "Net-(LED4-DP)" "Net-(U13-QA)" "Net-(LED5-A)" "Net-(U13-QB)"
+    "Net-(LED5-B)" "Net-(U13-QC)" "Net-(LED5-C)" "Net-(U13-QD)" "Net-(LED5-D)" "Net-(U13-QE)" "Net-(LED5-E)" "Net-(U13-QF)"
+    "Net-(LED5-F)" "Net-(U13-QG)" "Net-(LED5-G)" "Net-(U13-QH)" "Net-(LED5-DP)" "Net-(U14-QA)" "Net-(LED6-A)" "Net-(U14-QB)"
+    "Net-(LED6-B)" "Net-(U14-QC)" "Net-(LED6-C)" "Net-(U14-QD)" "Net-(LED6-D)" "Net-(U14-QE)" "Net-(LED6-E)" "Net-(U14-QF)"
+    "Net-(LED6-F)" "Net-(U14-QG)" "Net-(LED6-G)" "Net-(U14-QH)" "Net-(LED6-DP)" DisplayPWM "unconnected-(U8-PA5-Pad7)" "unconnected-(U8-CB1-Pad18)"
+    "unconnected-(U8-CA2-Pad39)" "unconnected-(U8-CA1-Pad40)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
