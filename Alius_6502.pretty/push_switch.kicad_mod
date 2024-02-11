@@ -9,10 +9,14 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp dae438bd-f03d-4a99-9c9d-881206ac7882)
   )
-  (fp_text user "${REFERENCE}" (at 2.54 -5.08 unlocked) (layer "F.Fab") hide
+  (fp_text user "${REFERENCE}" (at 0 -5.08 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 39c0513e-86c9-4e23-934a-a85ff11c915f)
   )
+  (fp_rect (start -4.240343 -3.484573) (end 4.58417 3.171385)
+    (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS") (tstamp 7349a3a4-c370-44e8-b592-e8c5b236a7b9))
+  (fp_rect (start -4.412109 -3.677811) (end 4.798879 3.30021)
+    (stroke (width 0.05) (type default)) (fill none) (layer "B.CrtYd") (tstamp 01b441fa-f70c-47d6-8a5c-2a41379c366e))
   (pad "1" thru_hole circle (at -3.04588 -2.406594) (size 1.7 1.7) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp 7d9048cc-2b1d-4f3c-ab4b-10313ca3f86c))
   (pad "1" thru_hole circle (at 3.45412 -2.406594) (size 1.7 1.7) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp cbb4e99d-0432-4e97-a6a4-699dca345e8d))
   (pad "2" thru_hole circle (at -3.04588 2.093406) (size 1.7 1.7) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp 2579db5b-8542-4e1b-a67b-cff6f2053d36))
